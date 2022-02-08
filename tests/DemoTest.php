@@ -11,4 +11,9 @@ final class DemoTest extends TestCase{
     {
         $this->assertTrue(Demo::isAngledTriangle(3, 4, 5));
     }
+
+    public function testIsNotAngledTriangle()
+    {
+        $this->assertFalse(Demo::isAngledTriangle(3, 2, 5));
+    }
 }
